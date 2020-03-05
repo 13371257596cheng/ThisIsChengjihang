@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Main2Activity">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00%"
+        android:layout_below="@id/img"
+        android:textSize="20sp"
+        android:paddingLeft="50dp"
+        android:id="@+id/tv">
+    </TextView>
+
+    <com.bawei.myapplication.DrawCircle
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv"
+        android:id="@+id/dc">
+    </com.bawei.myapplication.DrawCircle>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平移"
+            android:id="@+id/b1">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转"
+            android:id="@+id/b2">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩放"
+            android:id="@+id/b3">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="渐变"
+            android:id="@+id/b4">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮5"
+            android:id="@+id/b5">
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
